@@ -1748,11 +1748,8 @@
 					"$(SRCROOT)/external/Chipmunk/objectivec/include",
 					"$(SRCROOT)/external/ObjectAL/**",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
-				);
-				ONLY_ACTIVE_ARCH = YES;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = cocos2d;
 				SKIP_INSTALL = YES;
@@ -1782,10 +1779,7 @@
 					"$(SRCROOT)/external/Chipmunk/objectivec/include",
 					"$(SRCROOT)/external/ObjectAL/**",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = cocos2d;
 				SKIP_INSTALL = YES;
@@ -1841,7 +1835,6 @@
 				GCC_WARN_UNUSED_FUNCTION = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
-					external/kazmath/include,
 					"cocos2d/**",
 					"cocos2d-ui/**",
 					"cocos2d-ui-tests/**",
@@ -1849,8 +1842,8 @@
 					external/Chipmunk/objectivec/include,
 					"external/ObjectAL/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1891,7 +1884,6 @@
 				GCC_WARN_UNUSED_FUNCTION = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
-					external/kazmath/include,
 					"cocos2d/**",
 					"cocos2d-ui/**",
 					"cocos2d-ui-tests/**",
@@ -1899,7 +1891,7 @@
 					external/Chipmunk/objectivec/include,
 					"external/ObjectAL/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "";

@@ -395,7 +395,7 @@
 					"\"$(SRCROOT)/external/Chipmunk/include\"",
 					"\"$(SRCROOT)/external/Chipmunk/objectivec/include\"",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -447,7 +447,7 @@
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/external/Chipmunk/include\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-ffast-math",

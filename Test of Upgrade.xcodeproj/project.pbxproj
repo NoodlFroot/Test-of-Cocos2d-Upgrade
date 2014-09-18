@@ -52,6 +52,7 @@
 		79EE243A19CB47BF007A431B /* newton-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EE243919CB47BF007A431B /* newton-ipad.png */; };
 		79EE243C19CB47BF007A431B /* newton.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79EE243B19CB47BF007A431B /* newton.plist */; };
 		79EE243E19CB47BF007A431B /* newton.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EE243D19CB47BF007A431B /* newton.png */; };
+		79EE3B1C19CB4D14007A431B /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EE3B1919CB4A57007A431B /* libcocos2d.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79EE21B219CB47BD007A431B /* GLKit.framework in Frameworks */,
+				79EE3B1C19CB4D14007A431B /* libcocos2d.a in Frameworks */,
 				79EE21A419CB47BD007A431B /* OpenAL.framework in Frameworks */,
 				79EE21AA19CB47BD007A431B /* UIKit.framework in Frameworks */,
 				79EE21A019CB47BD007A431B /* QuartzCore.framework in Frameworks */,
@@ -144,7 +147,6 @@
 				79EE21B019CB47BD007A431B /* CoreText.framework in Frameworks */,
 				79EE21A219CB47BD007A431B /* OpenGLES.framework in Frameworks */,
 				79EE21AC19CB47BD007A431B /* Foundation.framework in Frameworks */,
-				79EE21B219CB47BD007A431B /* GLKit.framework in Frameworks */,
 				79EE21A619CB47BD007A431B /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +420,7 @@
 		79EE243F19CB47BF007A431B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -440,7 +442,7 @@
 		79EE244019CB47BF007A431B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -534,6 +536,7 @@
 				79EE244619CB47BF007A431B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
