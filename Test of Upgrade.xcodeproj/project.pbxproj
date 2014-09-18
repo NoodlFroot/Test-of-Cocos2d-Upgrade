@@ -63,6 +63,13 @@
 			remoteGlobalIDString = 79EE21B419CB47BD007A431B;
 			remoteInfo = ObjectiveChipmunk;
 		};
+		79EE3B1819CB4A57007A431B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79EE3B1219CB4A56007A431B /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5018F24D0DFDEAC400C013A5;
+			remoteInfo = cocos2d;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +130,7 @@
 		79EE243919CB47BF007A431B /* newton-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "newton-ipad.png"; path = "Resources/newton-ipad.png"; sourceTree = "<group>"; };
 		79EE243B19CB47BF007A431B /* newton.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = newton.plist; path = Resources/newton.plist; sourceTree = "<group>"; };
 		79EE243D19CB47BF007A431B /* newton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = newton.png; path = Resources/newton.png; sourceTree = "<group>"; };
+		79EE3B1219CB4A56007A431B /* cocos2d-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "cocos2d-ios.xcodeproj"; path = "libs/cocos2d-iphone/cocos2d-ios.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +247,7 @@
 		79EE21E319CB47BD007A431B /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				79EE3B1219CB4A56007A431B /* cocos2d-ios.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -272,6 +281,14 @@
 				79EE242D19CB47BF007A431B /* Rope.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		79EE3B1319CB4A56007A431B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79EE3B1919CB4A57007A431B /* libcocos2d.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,10 +342,17 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 79EE219319CB47BD007A431B;
 			productRefGroup = 79EE219D19CB47BD007A431B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 79EE3B1319CB4A56007A431B /* Products */;
+					ProjectRef = 79EE3B1219CB4A56007A431B /* cocos2d-ios.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				79EE219B19CB47BD007A431B /* Test of Upgrade */,
@@ -336,6 +360,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		79EE3B1919CB4A57007A431B /* libcocos2d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcocos2d.a;
+			remoteRef = 79EE3B1819CB4A57007A431B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		79EE219A19CB47BD007A431B /* Resources */ = {
@@ -498,6 +532,48 @@
 					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/objectivec/include\"",
 				);
 				INFOPLIST_FILE = "Test of Upgrade/Resources/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/build/Debug",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/build/Release",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/msvc/glew/lib/Release/Win32",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/msvc/glfw/lib-msvc100",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Release-iphoneos/ChipmunkStatic-iPhone.build/Objects-normal/armv7",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Release-iphoneos/ChipmunkStatic-iPhone.build/Objects-normal/armv7s",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Release-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Release-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7s",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Release",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Release-iphoneos",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/libGLEW/lib",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/libglfw/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -521,6 +597,48 @@
 					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/objectivec/include\"",
 				);
 				INFOPLIST_FILE = "Test of Upgrade/Resources/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/build/Debug",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/build/Release",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/msvc/glew/lib/Release/Win32",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/msvc/glfw/lib-msvc100",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Release-iphoneos/ChipmunkStatic-iPhone.build/Objects-normal/armv7",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Release-iphoneos/ChipmunkStatic-iPhone.build/Objects-normal/armv7s",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Release-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Release-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7s",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Release",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Release-iphoneos",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/libGLEW/lib",
+					"$(PROJECT_DIR)/Test",
+					of,
+					"Upgrade/libs/cocos2d-iphone/external/Chipmunk/xcode/libglfw/lib",
+				);
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
