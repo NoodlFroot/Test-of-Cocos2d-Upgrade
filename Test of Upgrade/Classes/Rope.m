@@ -26,7 +26,7 @@
 
 #import "Rope.h"
 #import "NewtonSphere.h"
-#import "ObjectiveChipmunk.h"
+#import "CCPhysics+ObjectiveChipmunk.h"
 
 // -----------------------------------------------------------------------
 #pragma mark Rope
