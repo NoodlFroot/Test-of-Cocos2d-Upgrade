@@ -17,7 +17,6 @@
 		79EE21AE19CB47BD007A431B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EE21AD19CB47BD007A431B /* CoreGraphics.framework */; };
 		79EE21B019CB47BD007A431B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EE21AF19CB47BD007A431B /* CoreText.framework */; };
 		79EE21B219CB47BD007A431B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EE21B119CB47BD007A431B /* GLKit.framework */; };
-		79EE21B819CB47BD007A431B /* libObjectiveChipmunk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EE21B519CB47BD007A431B /* libObjectiveChipmunk.a */; };
 		79EE21BC19CB47BD007A431B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EE21BB19CB47BD007A431B /* Default.png */; };
 		79EE21BE19CB47BD007A431B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EE21BD19CB47BD007A431B /* Default@2x.png */; };
 		79EE21C019CB47BD007A431B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EE21BF19CB47BD007A431B /* Default-568h@2x.png */; };
@@ -56,18 +55,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		79EE21B619CB47BD007A431B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79EE219419CB47BD007A431B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79EE21B419CB47BD007A431B;
-			remoteInfo = ObjectiveChipmunk;
-		};
 		79EE3B1819CB4A57007A431B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79EE3B1219CB4A56007A431B /* cocos2d-ios.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5018F24D0DFDEAC400C013A5;
+			remoteInfo = cocos2d;
+		};
+		79EE3B1A19CB4AAA007A431B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79EE3B1219CB4A56007A431B /* cocos2d-ios.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5018F24C0DFDEAC400C013A5;
 			remoteInfo = cocos2d;
 		};
 /* End PBXContainerItemProxy section */
@@ -84,7 +83,6 @@
 		79EE21AD19CB47BD007A431B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		79EE21AF19CB47BD007A431B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		79EE21B119CB47BD007A431B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		79EE21B519CB47BD007A431B /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjectiveChipmunk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EE21BB19CB47BD007A431B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
 		79EE21BD19CB47BD007A431B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
 		79EE21BF19CB47BD007A431B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 				79EE21B019CB47BD007A431B /* CoreText.framework in Frameworks */,
 				79EE21A219CB47BD007A431B /* OpenGLES.framework in Frameworks */,
 				79EE21AC19CB47BD007A431B /* Foundation.framework in Frameworks */,
-				79EE21B819CB47BD007A431B /* libObjectiveChipmunk.a in Frameworks */,
 				79EE21B219CB47BD007A431B /* GLKit.framework in Frameworks */,
 				79EE21A619CB47BD007A431B /* AudioToolbox.framework in Frameworks */,
 			);
@@ -168,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				79EE219C19CB47BD007A431B /* Test of Upgrade.app */,
-				79EE21B519CB47BD007A431B /* libObjectiveChipmunk.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -305,27 +301,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				79EE21B719CB47BD007A431B /* PBXTargetDependency */,
+				79EE3B1B19CB4AAA007A431B /* PBXTargetDependency */,
 			);
 			name = "Test of Upgrade";
 			productName = "Test of Upgrade";
 			productReference = 79EE219C19CB47BD007A431B /* Test of Upgrade.app */;
 			productType = "com.apple.product-type.application";
-		};
-		79EE21B419CB47BD007A431B /* ObjectiveChipmunk */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79EE244119CB47BF007A431B /* Build configuration list for PBXNativeTarget "ObjectiveChipmunk" */;
-			buildPhases = (
-				79EE21B319CB47BD007A431B /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ObjectiveChipmunk;
-			productName = ObjectiveChipmunk;
-			productReference = 79EE21B519CB47BD007A431B /* libObjectiveChipmunk.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -356,7 +337,6 @@
 			projectRoot = "";
 			targets = (
 				79EE219B19CB47BD007A431B /* Test of Upgrade */,
-				79EE21B419CB47BD007A431B /* ObjectiveChipmunk */,
 			);
 		};
 /* End PBXProject section */
@@ -424,20 +404,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79EE21B319CB47BD007A431B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		79EE21B719CB47BD007A431B /* PBXTargetDependency */ = {
+		79EE3B1B19CB4AAA007A431B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 79EE21B419CB47BD007A431B /* ObjectiveChipmunk */;
-			targetProxy = 79EE21B619CB47BD007A431B /* PBXContainerItemProxy */;
+			name = cocos2d;
+			targetProxy = 79EE3B1A19CB4AAA007A431B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -458,7 +431,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -478,43 +451,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		79EE244219CB47BF007A431B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ENABLE_OBJC_ARC = NO;
-				EXECUTABLE_EXTENSION = a;
-				EXECUTABLE_PREFIX = lib;
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/chipmunk/include\"",
-					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/objectivec/include\"",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		79EE244319CB47BF007A431B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CLANG_ENABLE_OBJC_ARC = NO;
-				EXECUTABLE_EXTENSION = a;
-				EXECUTABLE_PREFIX = lib;
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/chipmunk/include\"",
-					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/objectivec/include\"",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -532,6 +471,7 @@
 					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/objectivec/include\"",
 				);
 				INFOPLIST_FILE = "Test of Upgrade/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Test",
@@ -597,6 +537,7 @@
 					"\"$(SRCROOT)/$(PROJECT_NAME)/Libraries/Chipmunk/objectivec/include\"",
 				);
 				INFOPLIST_FILE = "Test of Upgrade/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Test",
@@ -661,14 +602,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		79EE244119CB47BF007A431B /* Build configuration list for PBXNativeTarget "ObjectiveChipmunk" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79EE244219CB47BF007A431B /* Debug */,
-				79EE244319CB47BF007A431B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 		79EE244419CB47BF007A431B /* Build configuration list for PBXNativeTarget "Test of Upgrade" */ = {
 			isa = XCConfigurationList;
